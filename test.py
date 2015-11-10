@@ -12,9 +12,9 @@ import numpy
 m = numpy.array(mat).tolist();
 sum = [];
 for i in m:
-    sum1 = 0;
+	sum1 = 0;
 	for j in i:
-        sum1 = sum1+j;
+	        sum1 = sum1+j;
 	sum.append(sum1);
 val = [];
 for i in range(len(sum)):
