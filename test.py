@@ -6,7 +6,8 @@ import re
 d = re.findall("[a-zA-Z0-9!? ,'""*;:-]*[^.\\r\\n,]",c);
 from sklearn.feature_extraction.text import TfidfVectorizer
 tfidf = TfidfVectorizer();
-tf = tfidf.fit_transform(d)
+tf = tfidf.fit_transform(d);
+from sklearn.metrics.pairwise import cosine_similarity
 mat = cosine_similarity(tf,tf)
 import numpy
 m = numpy.array(mat).tolist();
